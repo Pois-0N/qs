@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)http://8e5dd3.zslongdingsl.com/huodong/tlvoice/create-9578126-0-5c9efc841d3385bcdbb6a3a281f7b21f.html -->
+<html lang="zh-CN" class=""><!-- date: 2015-02-26 --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+<title>录制语音</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://lxfm-s.malmam.com/images/lvxingfm_favicon.ico">
+<link rel="icon" type="image/x-icon" href="http://lxfm-s.malmam.com/images/lvxingfm_favicon.ico">
+<link href="./ly_files/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<!-- <link href="http://libs.malmam.com/bootstrap/3.3.2/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://libs.malmam.com/font-awesome-4.0.3/css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" /> -->
+<style type="text/css">
+/* chunk: 0 */
+
+html,body {/* background-color:#fff;color:#555555;font-size:14px; */}
+     body {background-color:#f8f8f8;/*color:#666;*/}
+     h3 {/*color:#666;*/}
+     .page-main .page-frame {
+       padding-top:20px;
+       padding-bottom:20px;
+     }
+     a {color:#37a5be;}
+     a:hover {color:#37a5be;}
+
+/* chunk: 1 */
+
+body {
+   background-color:#282b2d;
+   background-image:none;
+   background-repeat:repeat;
+   background-position:50% 0;
+   color:#fff;
+}
+.page-container {
+   max-width:500px;
+   background-image:none;/*url(http://lxfm-s.malmam.com/uploads/image/150216/2781204_5_5a6fa95979_o.png);*/
+   background-repeat:no-repeat;
+   background-position:50% 100%;
+}
+.page-container a {
+   text-decoration:none;
+}
+
+.highcol {
+   position:relative;
+ }
+
+ h1 {
+   margin:0;
+   padding:30px 0;
+   text-align:center;
+   font-size:30px;
+ }
+
+ .cibox {
+   width:140px;
+   height:160px;
+   margin-left:auto;
+   margin-right:auto;
+   position:relative;
+ }
+ .cibox img {width:100%; }
+
+ .cibox .ico-rec-play {
+   width:96px;
+   height:96px;
+   position:absolute;
+   top:22px;
+   left:22px;
+ }
+
+ .cibox .ico-rec-playing {
+   width:86px;
+   height:86px;
+   position:absolute;
+   top:37px;
+   left:37px;
+   overflow:hidden;
+ }
+
+ .voice-time-bar {
+   width:100%;
+   text-align:center;
+   position:absolute;
+   left:0;
+   bottom:0;
+   font-size:16px;
+   display:none;
+ }
+ 
+ h2 {
+   color:#fffc03;
+   font-size:16px;
+   font-weight:bold;
+   margin-top:20px;
+   margin-left:15px;
+   margin-bottom:20px;
+   padding-left:10px;
+ }
+
+ .btnbox {
+   padding-top:30px;
+   width:100%;
+   text-align:center;
+ }
+
+ .hdbtn {
+   display:inline-block;
+   width:140px;
+   height:40px;
+   text-align:center;
+   line-height:40px;
+   font-size:18px;
+   background-color:#fff;
+   /* border-width:2px;
+   border-style:solid; */
+   border-color:#a4a4a4;
+   border-radius:3px;
+   -webkit-border-radius:3px;
+   margin-left:auto;
+   margin-right:auto;
+   text-decoration:none;
+   color:#727272;
+ }
+ .hdbtn:hover,
+ .hdbtn:active,
+ .hdbtn:visited {
+   color:#727272;
+   text-decoration:none;
+ }
+
+ .hdbtn-2 {
+   background-color:#45c01a;
+   color:#fff;
+ }
+ .hdbtn-2:hover,
+ .hdbtn-2:active,
+ .hdbtn-2:visited {
+   color:#fff;
+   text-decoration:none;
+ }
+
+
+ .hdbtn-done-ok {
+   background-color:transparent;
+   color:#fff;
+   font-size:24px;
+ }
+ .hdbtn-done-ok:hover,
+ .hdbtn-done-ok:active,
+ .hdbtn-done-ok:visited {
+   color:#fff;
+   text-decoration:none;
+ }
+
+ 
+ .btn-rec-preshare,
+ .btn-rec-share
+ {
+   margin-top:15px;
+ }
+
+ .btn-rec-share .hdbtn { width:auto;font-size:16px;}
+
+ .sdl img{width:100%; }
+ 
+
+ .overlaybg {
+   position:absolute;
+   width:100%;
+   height:100%;
+   top:0;
+   left:0;
+   z-index:900;
+   background-color:rgba(0,0,0,0.9);
+   display:none;
+ }
+ .overlaybg-light {
+   background-color:rgba(0,0,0,0.7);
+ }
+
+  .shareGuide {
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   z-index:1000;
+   display:none;
+    text-align:right;
+ }
+ .shareGuide img {max-width:100%; }
+
+ .afterShareGuide{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   min-height:100%;
+   z-index:2000;
+   background-color:#fff;
+   color:#333;
+   display:none;
+ }
+ .a00 img{width:100%;}
+ .a01 {text-align:center;padding:30px 0 50px 0;}
+ .a01 img {width:100px;}
+ .a02 img {width:100%; }
+
+ .c00 {text-align:right;padding:15px;}
+
+ .hdlinks > div img{
+   width:100%;
+ }
+ .imgPool img {max-width:100%; display:none;}
+</style>
+<script async="" src="http://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="./ly_files/jquery-1.11.0.min.js">
+</script>
+<script type="text/javascript" src="./ly_files/global.js">
+</script>
+<!-- <script type="text/javascript" src="http://libs.malmam.com/jquery-plugin/scrollto/jquery-scrollto.js">
+</script> -->
+<script type="text/javascript" src="./ly_files/bootstrap.min.js">
+</script>
+</head>
+<body>
+<div class="container-fluid page-container">
+<div class="row">
+<div class="col-xs-12 highcol hdmain">
+  <h1>录制语音</h1>
+<div class="cibox">
+  <div class="ico-rec-start">
+    <img src="./ly_files/2798169_5_db77875885_o.png" alt="">
+  </div>
+<div class="ico-rec-recording hide">
+  <!-- <img class="rc-1 hide" src="http://lxfm-s.malmam.com/uploads/image/150216/2781334_5_2a4e35b4e8_o.png" alt="" />-- 2 --
+  <img class="rc-2 hide" src="http://lxfm-s.malmam.com/uploads/image/150216/2781333_5_e3200f4d19_o.png" alt="" />!-- 1 --
+  <img class="rc-3 hide" src="http://lxfm-s.malmam.com/uploads/image/150216/2781336_5_5e066fdb53_o.png" alt="" />!-- 4 --
+  <img class="rc-4 hide" src="http://lxfm-s.malmam.com/uploads/image/150216/2781335_5_8991dbeddd_o.png" alt="" />!-- 3 --
+  <img class="rc-5 hide" src="http://lxfm-s.malmam.com/uploads/image/150216/2781337_5_cf4681741c_o.png" alt="" />!-- 5 -- -->
+  <!-- <img src="http://lxfm-s.malmam.com/uploads/image/150216/2781222_5_257651c70e_o.png"/> -->
+
+
+  <img class="rc-1 hide" src="./ly_files/2798174_5_6508b0eba9_o.png" alt=""><!-- 1 -->
+  <img class="rc-2 hide" src="./ly_files/2798175_5_afd607d62f_o.png" alt=""><!-- 2 -->
+  <img class="rc-3" src="./ly_files/2798176_5_8cca19f263_o.png" alt=""><!-- 3 -->
+
+  <div style="position:absolute;left:0;bottom:0;width:100%;text-align:center;color:#eee;font-size:16px;">正在录音...</div>
+</div>
+<div class="ico-rec-play hide" onclick="playVoiceByUser();return false;">
+  <img src="./ly_files/2781215_5_7fe06370f6_o.png" alt="">
+</div>
+<div class="ico-rec-playing hide">
+  <!-- <img class="pi-1 hide" src="http://lxfm-s.malmam.com/uploads/image/150216/2781219_5_2905ad457a_o.png" alt="" />
+  <img class="pi-2 hide" src="http://lxfm-s.malmam.com/uploads/image/150216/2781220_5_001114eff2_o.png" alt="" />
+  <img class="pi-3 hide" src="http://lxfm-s.malmam.com/uploads/image/150216/2781221_5_cacc5ecf9d_o.png" alt="" /> -->
+
+  <img class="pi-1 hide" src="./ly_files/2798171_5_efa8425728_o.png" alt="">
+  <img class="pi-2 hide" src="./ly_files/2798172_5_ca3ae92487_o.png" alt="">
+  <img class="pi-3" src="./ly_files/2798173_5_c39e9d4235_o.png" alt="">
+</div>
+<div class="voice-time-bar">
+  <span class="voice-time">0</span>s</div>
+</div>
+<div class="btnbox">
+<div class="btn-rec-start hide"><a class="hdbtn hdbtn-1" href="javascript:;">开始录音</a></div>
+<div class="btn-rec-stop hide"><a class="hdbtn hdbtn-2" href="javascript:;" onclick="stopRecord();return false;">停止录音</a></div>
+<div class="btn-rec-restart hide"><a class="hdbtn hdbtn-1" href="javascript:;" onclick="restartRecord();return false;">重新录音</a></div>
+<div class="btn-rec-preshare hide"><a class="hdbtn hdbtn-1" href="javascript:;" onclick="return false;">正在保存语音...</a></div>
+<div class="btn-rec-share hide"><a class="hdbtn hdbtn-1" href="javascript:;" xxdisonclick="showShareGuide();return false;">已保存，可分享</a></div>
+</div>
+<div style="margin-top:40px;padding:15px;text-align:center;display:none;">©2015 &nbsp; <a href="http://app.nahaowan.com/" target="_blank" style="color:#fff;text-decoration:underline;">哪好玩</a></div>
+<div class="overlaybg" onclick="hdOverlayBgClicked()"><img src="./ly_files/cleardot.gif" alt=""></div>
+<div class="shareGuide" onclick="hdOverlayBgClicked()"><!-- <img src="http://lxfm-s.malmam.com/uploads/image/150216/2781217_5_7ed9054687_o.png"/> -->
+  <!-- <img src="http://lxfm-s.malmam.com/uploads/image/150227/2782672_5_85b37dab50_o.png" alt="" /> -->
+</div>
+<div class="afterShareGuide">
+<div class="c00"><img onclick="hdOverlayBgClicked();" src="./ly_files/2781340_5_a2b81acc74_o.png" alt=""></div>
+<div class="a00" onclick="afterShareClick();"><img src="./ly_files/2781342_5_a2ec9b35d4_o.png" alt=""></div>
+<div class="a01" onclick="afterShareClick();" style="font-size:20px;">想知道哪好玩吗？<br>
+超过5000万人都在用 <img src="./ly_files/2781339_5_0a27eb0e04_o.png" style="width:50px;" alt=""> 哪好玩</div>
+<div class="a02" onclick="afterShareClick();">
+<div style="width:80%;margin-left:auto;margin-right:auto;border:2px solid #aaa;border-radius:15px;padding-top:5px;"><img src="./ly_files/2781341_5_3915a7f8ac_o.png" alt=""></div>
+</div>
+<div style="text-align:center;" onclick="afterShareClick();"><img src="./ly_files/2781453_5_1ee0fcaf00_o.jpg" style="width:50px;" alt=""></div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+
+
+ var voice_record_time=0;
+ var voice_record_start = 0;
+ function switchIconTo(s){
+   var ss=[ "start" , "recording", "play" , "playing"];
+   var i=0;
+   for(;i<ss.length;i++){
+     $('.ico-rec-'+ss[i]).addClass('hide');
+     $('.ico-rec-'+s).removeClass('hide');
+   }
+ }
+
+ function switchBtnTo(bs){
+   var ss=[ "start" , "stop" ,  "restart","preshare","share"];
+   var i=0,j=0;
+   for(;i<ss.length;i++){
+     $('.btn-rec-'+ss[i]).addClass('hide');
+     var show=false;
+     for(j=0;j<bs.length;j++){
+       if(bs[j] == ss[i]){
+         show=true;
+         break;
+       }
+     }
+     if(show){
+       $('.btn-rec-'+ss[i]).removeClass('hide');
+     }
+   }
+ }
+
+ function onUploadDone(serverId){
+   // 激活下一步按钮
+
+   // 保存serverId到服务器
+   $.ajax({
+     url:"\/huodong\/tlvoice\/save-record",
+     //dateType:"jsonp",
+     type:"POST",
+     data:{serverId:serverId,timeLength:voice_record_time}
+   }).done(function(data){
+     if(data && data.ret === 0){
+       var key = data.data.key;
+       $('.btn-next').show();
+
+       wxShareDataArray[isAndroid ? 3 : 2][3] = "http:\/\/8e5dd3.zslongdingsl.com\/huodong\/tlvoice\/" + key + ".html";
+       changeWeixinShareData(isAndroid ? 3 : 2);
+
+
+       //知道上传成功
+       //$('.btn-rec-share .hdbtn').addClass('hdbtn-2');
+       $('.btn-rec-share .hdbtn').addClass('hdbtn-done-ok');
+       $('.btn-rec-share .hdbtn').removeClass('hdbtn-1');
+
+
+       switchBtnTo(["restart","share"]);
+       
+     }else{
+       //失败
+       alert("语音保存失败，请重新录制!");
+     }
+   }).complete(function(){
+
+     //alert("complete");
+
+   });
+   
+ }
+
+ var play_time_ti;
+ var is_playing=false;
+ function playVoice(id){
+   is_playing=true;
+   switchIconTo('playing');
+
+   /*
+   播放结束事件无法捕捉
+   wx.onVoicePlayEnd({
+     success: function (res) {
+       alert("play end.");
+       var localId = res.localId; // 返回音频的本地ID
+
+       switchIconTo('play');
+     }
+   });
+   */
+
+   play_time_ti = setInterval(function(){
+     var tt = $('.voice-time-bar .voice-time');
+     var ss = tt.text() *1;
+     tt.text(ss>1 ? ss-1:0);
+   },1000);
+   
+   setTimeout(function(){
+     is_playing=false;
+     switchIconTo('play');
+
+     $('.voice-time-bar .voice-time').text(voice_record_time*1);
+     
+     if(play_time_ti){
+       clearInterval(play_time_ti);
+     }
+     
+   },voice_record_time*1000);
+   
+   wx.playVoice({
+     localId: id// 需要播放的音频的本地ID，由stopRecord接口获得
+   });
+   
+ }
+
+ function playVoiceByUser(){
+   if(is_playing) return;
+
+   playVoice(last_voice_localId);
+ }
+ function uploadVoice(localId){
+   wx.uploadVoice({
+     localId: localId, // 需要上传的音频的本地ID，由stopRecord接口获得
+     isShowProgressTips: 1, // 默认为1，显示进度提示
+     success: function (res) {
+       var serverId = res.serverId; // 返回音频的服务器端ID
+       //alert("upload done: " + serverId);
+       onUploadDone(serverId);
+     }
+   });
+ }
+
+ var last_voice_localId;
+ function onRecordDone(localId){
+
+   voice_record_time = Math.ceil(((new Date()).getTime() - voice_record_start) / 1000);
+
+   wxShareDataArray[isAndroid ? 3 : 2][1] = voice_record_time*1 + "秒";
+   
+   switchIconTo('play');
+   switchBtnTo(["restart","preshare"]);
+
+   //还不知道上传是否成功
+   $('.btn-rec-share .hdbtn').removeClass('hdbtn-2');
+   $('.btn-rec-share .hdbtn').addClass('hdbtn-1');
+
+
+   $('.voice-time-bar .voice-time').text(voice_record_time*1);
+   $('.voice-time-bar').show();
+   
+   last_voice_localId = localId;
+   
+   setTimeout(function(){
+     uploadVoice(localId);
+   },2000);
+
+   playVoice(localId);
+   
+ }
+
+ var isRecording = false;
+ function startRecord(){
+
+   if(isRecording) return;
+   isRecording=true;
+
+   
+   
+   wx.onVoiceRecordEnd({
+     // 录音时间超过一分钟没有停止的时候会执行 complete 回调
+     complete: function (res) {
+       var localId = res.localId;
+       //alert("done: "+localId);
+
+       isRecording=false;
+       onRecordDone(localId);
+     }
+   });
+
+   $('.voice-time-bar').hide();
+   switchIconTo('recording');
+   switchBtnTo(["stop"]);
+
+   voice_record_time=0;
+   voice_record_start = (new Date()).getTime();
+
+   wx.startRecord({
+     success:function(){
+       isRecording=false;
+       voice_record_start = (new Date()).getTime();
+     },
+     cancel:function(){
+       isRecording=false;
+       
+       switchBtnTo(["start"]);
+       switchIconTo('start');
+     }
+   });
+   
+ }
+
+
+ function stopRecord(){
+   isRecording=false;
+   
+   wx.stopRecord({
+     success: function (res) {
+       var localId = res.localId;
+       //alert("stop: "+localId);
+       onRecordDone(localId);
+     }
+   });
+ }
+
+ function playRecord(){
+   playVoice(last_voice_localId);
+ }
+
+ function restartRecord(){
+   startRecord();
+ }
+
+ $(function(){
+   $('.btn-rec-start .hdbtn').on('touchstart',function(){
+     startRecord();
+   });
+   $('.btn-rec-start .hdbtn').on('click',function(){
+     startRecord();
+   });
+ });
+
+
+  function hdOverlayBgClicked(){
+   $('.shareGuide').hide();
+   $('.afterShareGuide').hide();
+   $('.overlaybg').hide();
+ }
+
+ function showShareGuide(){
+
+   if(!$('.btn-rec-share .hdbtn').hasClass('hdbtn-2')){
+     return;
+   }
+   
+   $('.afterShareGuide').hide();
+   $('.shareGuide').show();
+   $('.overlaybg').show();
+
+   //$('.shareGuide').ScrollTo();
+ }
+
+ function showAfterShareGuide(){
+
+   return;
+   
+   $('.afterShareGuide').show();
+   $('.shareGuide').hide();
+   $('.overlaybg').show();
+   //$('.afterShareGuide').ScrollTo();
+ }
+ function afterShareClick(){
+   //document.location.href="http://c.lagou.com/cs/show/52592.html";
+   document.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=fm.lvxing.tejia";
+ }
+ 
+ function hdRefreshPage(){
+   var url = document.location.href;
+   url = url.replace(/#.*$/,'');
+   //document.location.href = url;
+   document.location.href="http:\/\/8e5dd3.zslongdingsl.com\/huodong\/tlvoice/create-9578126-0-5c9efc841d3385bcdbb6a3a281f7b21f.html";
+ }
+
+
+ var piArr=[];
+ var piPos=0;
+ $(function(){
+   if(piArr.length <1){
+     piArr[0] = $('.pi-1');
+     piArr[1] = $('.pi-2');
+     piArr[2] = $('.pi-3');
+   }
+
+   setInterval(function(){
+     var i=0;
+     for(;i<3;i++){
+       if(i == piPos){
+         piArr[i].removeClass('hide');
+       }else{
+         piArr[i].addClass('hide');
+       }
+     }
+
+     piPos++;
+     if(piPos>=3){
+       piPos = (piPos % 3);
+     }
+   },500);
+   
+ });
+
+
+ var riArr=[];
+ var riPos=0;
+ $(function(){
+   if(riArr.length <1){
+     riArr[0] = $('.rc-1');
+     riArr[1] = $('.rc-2');
+     riArr[2] = $('.rc-3');
+//     riArr[3] = $('.rc-4');
+//     riArr[4] = $('.rc-5');
+   }
+
+   setInterval(function(){
+     var i=0;
+     for(;i<3;i++){
+       if(i == riPos){
+         riArr[i].removeClass('hide');
+       }else{
+         riArr[i].addClass('hide');
+       }
+     }
+
+     riPos++;
+     if(riPos>=3){
+       riPos = (riPos % 3);
+     }
+   },300);
+   
+ });
+ 
+ /* fix style */
+ function _fixLayoutStyle(){
+   var w = $(window).width();
+   var h = $(window).height();
+   if(w>500) w=500;
+   var ptdPadding = Math.floor(w * 5 / 320);
+   var ptbH = Math.floor(w * 290 /320);
+
+   $(document.body).append('<sty'+'le>'
+                           + '.page-container {min-height:'+h+'px;background-position:50% 90%; }'
+                           + '.overlaybg {min-height:'+h+'px;}'
+                           + '.afterShareGuide {min-height:'+h+'px;}'
+                           +'<\/sty'+'le>');
+ }
+ $(_fixLayoutStyle);
+ $(window).on("load",_fixLayoutStyle);
+
+//]]>
+</script>
+<!-- ga -->
+<script type="text/javascript">
+//<![CDATA[
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-41499901-2', '.8e5dd3.zslongdingsl.com');
+     ga('send', 'pageview');
+//]]>
+</script><!-- body append -->
+<script type="text/javascript">
+//<![CDATA[
+ var isAndroid = false;
+//]]>
+</script><script src="./ly_files/jweixin-1.0.0.js" type="text/javascript">
+</script><script type="text/javascript">
+//<![CDATA[
+	  var wxShareDataArray = [["播放语音","10秒","http://lxfm-s.malmam.com/uploads/image/150521/2798170_5_8459d86fc0_o.jpg","http:\/\/8e5dd3.zslongdingsl.com\/huodong\/tlvoice\/create-9578126-0-5c9efc841d3385bcdbb6a3a281f7b21f.html"],
+				  ["播放语音","10秒","http://lxfm-s.malmam.com/uploads/image/150521/2798170_5_8459d86fc0_o.jpg","http:\/\/8e5dd3.zslongdingsl.com\/huodong\/tlvoice\/create-9578126-0-5c9efc841d3385bcdbb6a3a281f7b21f.html"],
+				  ["播放语音","10秒","http://lxfm-s.malmam.com/uploads/image/150521/2798170_5_8459d86fc0_o.jpg","http:\/\/8e5dd3.zslongdingsl.com\/huodong\/tlvoice\/create-9578126-0-5c9efc841d3385bcdbb6a3a281f7b21f.html"],
+				  ["播放语音","10秒","http://lxfm-s.malmam.com/uploads/image/150521/2798170_5_8459d86fc0_o.jpg","http:\/\/8e5dd3.zslongdingsl.com\/huodong\/tlvoice\/create-9578126-0-5c9efc841d3385bcdbb6a3a281f7b21f.html"]];
+ 
+  $(function(){
+ wx.config({
+   debug: false,
+   appId: "wx554c58a108ab9e97",
+   timestamp: 1441593873,
+   nonceStr: "91bde9c21aa39d5f12bdcc0f9e055d00", 
+   signature: "638e9c889c8f0b0847db6733545a997a1113cf88",
+   jsApiList: ["onMenuShareTimeline","onMenuShareAppMessage","startRecord","stopRecord","onVoiceRecordEnd","playVoice","pauseVoice","stopVoice","onVoicePlayEnd","uploadVoice","downloadVoice"] 
+ });
+ wx.ready(function(res){
+   switchBtnTo(['start']);
+   changeWeixinShareData(isAndroid ? 1 : 0);
+ });
+ wx.error(function(res){
+   //console.log(res);
+   //alert(res);
+ });
+ });
+
+ function changeWeixinShareData(index){
+
+     wx.onMenuShareTimeline({
+     title: wxShareDataArray[index][1],
+     link: wxShareDataArray[index][3],
+     imgUrl: wxShareDataArray[index][2],
+     success: function () {
+       // 用户确认分享后执行的回调函数
+       showAfterShareGuide();
+     },
+     cancel: function () {
+       // 用户取消分享后执行的回调函数
+       showAfterShareGuide();
+     }
+     });
+
+     wx.onMenuShareAppMessage({
+     title: wxShareDataArray[index][0],
+     desc: wxShareDataArray[index][1],
+     link: wxShareDataArray[index][3],
+     imgUrl: wxShareDataArray[index][2],
+     //type: '', // 分享类型,music、video或link，不填默认为link
+     //dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+     success: function () {
+       // 用户确认分享后执行的回调函数
+       showAfterShareGuide();
+     },
+     cancel: function () {
+       // 用户取消分享后执行的回调函数
+       showAfterShareGuide();
+     }
+     });
+ }
+//]]>
+</script><!-- layout -->
+
+
+<style>.page-container {min-height:803px;background-position:50% 90%; }.overlaybg {min-height:803px;}.afterShareGuide {min-height:803px;}</style></body></html>
