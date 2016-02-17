@@ -1,0 +1,158 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link id="ctl00_linkDefault" type="text/css" rel="stylesheet" href="__PUBLIC__/NewDefault.css"><link href="__PUBLIC__/q.css" rel="stylesheet" type="text/css"><link href="__PUBLIC__/newsolid_38.css" rel="stylesheet" type="text/css"><script src="__PUBLIC__/jquery.js" type="text/javascript"></script><title>易简贷调查问卷</title><style>.top-box {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-width: 1110px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1090px;
+}
+.span3 {
+  width: 226px;
+}
+#site-logo {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 275px;
+  height: 50px;
+  background: url(https://www.ejiandai.com/styles/../img/logo.jpg) no-repeat right 0;
+}
+.span8 {
+  width: 636px;
+  float: right;
+}
+.site-nav {
+  display: inline-block;
+  list-style-type: none;
+  width: 95%;
+  padding-right: 5%;
+  height: 36px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  text-align: right;
+}
+.site-nav > li {
+  display: inline-block;
+  width: 18%;
+  height: 36px;
+  text-align: center;
+}
+.site-nav > li > a {
+  display: inline-block;
+  color: #717171;
+  font-size: 16px;
+}
+</style></head><body><div class="top-box"><div style="background: url(__PUBLIC__/headerbg.png) repeat-x; height:105px; margin-top: 1px;" class=""><div class="container"><div class="row"><div class="span3"><a id="site-logo" href="https://www.ejiandai.com"></a></div><div class="span8 pull-right"><ul class="site-nav"><li><a href="https://www.ejiandai.com">返回首页</a></li></ul></div></div></div></div></div><div id="jqContent" class="" style="text-align: left; "><div style="text-align: center;margin-top: 30px;font-size: 30px; color: orange;">互联网金融调查问卷</div><div style="text-align: center;font-size: 16px;color: #ccc;">*感谢您填写本问卷，用于互联网金融教学所用，感谢您的支持</div><div id="mainCss"><div id="mainInner"><div id="box"><div class="survey" style="margin:0px auto;"><form action="http://bbs.ejiandai.com/qs/index.php/Index/reg" method="post" id="qs"><fieldset class="fieldset" id="fieldset1"><div class="div_question" id="div1"><div class="div_title_question_all"><div class="div_topic_question"><b>1.</b></div><div id="divTitle1" class="div_title_question">您以前有没有听说或接触过P2P网贷平台？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion1"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width: 99%;"><input type="radio" name="q1" id="q1_1" value="A"><label for="q1_1">A、有</label></li><li style="width:99%;"><input type="radio" name="q1" id="q1_2" value="B"><label for="q1_2">B、没有</label></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div2"><div class="div_title_question_all"><div class="div_topic_question"><b>2.</b></div><div id="divTitle2" class="div_title_question">您是通过哪些渠道了解到互联网金融的？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion2"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width:24%;"><input type="radio" name="q2" id="q2_1" value="A"><label for="q2_1">A、论坛\网站</label></li><li style="width:24%;"><input type="radio" name="q2" id="q2_2" value="B"><label for="q2_2">B、新闻</label></li><li style="width:24%;"><input type="radio" name="q2" id="q2_3" value="C"><label for="q2_3">C、家人朋友推荐</label></li><li style="width:24%;"><input type="radio" name="q2" id="q2_4" value="D"><label for="q2_4">D、报纸</label></li><div style="clear:both;"></div></ul><ul class="ulradiocheck"><li style=""><input type="radio" name="q2" id="q2_5" value="E"><label for="q2_5" style="display: inline-block;">E、其他方式（可简要叙述了解渠道）</label><input class="underline" type="text" value="" rel="q2_5" name="q2_5" onpropertychange="lengthChange(this);" oninput="lengthChange(this);" style="color: rgb(153, 153, 153); position: static;"></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div3"><div class="div_title_question_all"><div class="div_topic_question"><b>3.</b></div><div id="divTitle3" class="div_title_question">您是否会通过P2P网贷平台来进行投资理财？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion3"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width:99%;"><input type="radio" name="q3" id="q3_1" value="A"><label for="q3_1">A、会</label></li><li style="width:99%;"><input type="radio" name="q3" id="q3_2" value="B"><label for="q3_2">B、不会</label></li><li style="width: 99%;"><input type="radio" name="q3" id="q3_3" value="C"><label for="q3_3">C、考虑一下</label></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div4"><div class="div_title_question_all"><div class="div_topic_question"><b>4.</b></div><div id="divTitle4" class="div_title_question">您对P2P网贷平台投资理财最大的担心是什么？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion4"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width:99%;"><input type="radio" name="q4" id="q4_1" value="A"><label for="q4_1">A、对网络不信任</label></li><li style="width: 99%;"><input type="radio" name="q4" id="q4_2" value="B"><label for="q4_2">B、没有安全保障</label></li><li style="width: 99%;"><input type="radio" name="q4" id="q4_3" value="C"><label for="q4_3">C、担心资料泄密</label></li><li style="width:99%;"><input type="radio" name="q4" id="q4_4" value="D"><label for="q4_4">D、不安全不可靠</label></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div5"><div class="div_title_question_all"><div class="div_topic_question"><b>5.</b></div><div id="divTitle5" class="div_title_question">您平时的投资理财方式有哪些？<span style="color:red;">&nbsp;*</span><span class="qtypetip">&nbsp;[多选题]</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion5"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width: 99%;"><input id="q5_1" type="checkbox" name="q5" value="A"><label for="q5_1">A、股票</label></li><li style="width: 99%;"><input id="q5_2" type="checkbox" name="q5" value="B"><label for="q5_2">B、银行理财产品</label></li><li style="width: 99%;"><input id="q5_3" type="checkbox" name="q5" value="C"><label for="q5_3">C、期货</label></li><li style=""><input id="q5_4" type="checkbox" name="q5" value="D"><label for="q5_4" style="display: inline-block;">D、其他</label><input type="text" class="underline" value="" onpropertychange="lengthChange(this);" oninput="lengthChange(this);" rel="q5_4" style="color: rgb(153, 153, 153); position: static;"></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div6"><div class="div_title_question_all"><div class="div_topic_question"><b>6.</b></div><div id="divTitle6" class="div_title_question">您喜欢多长时间的互联网金融标？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion6"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width:99%;"><input type="radio" name="q6" id="q6_1" value="A"><label for="q6_1">A、1-2个月</label></li><li style="width:99%;"><input type="radio" name="q6" id="q6_2" value="B"><label for="q6_2">B、3-6个月</label></li><li style="width:99%;"><input type="radio" name="q6" id="q6_3" value="C"><label for="q6_3">C、6-9个月</label></li><li style="width:99%;"><input type="radio" name="q6" id="q6_4" value="D"><label for="q6_4">D、9-12个月</label></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div7"><div class="div_title_question_all"><div class="div_topic_question"><b>7.</b></div><div id="divTitle7" class="div_title_question">您觉得P2P行业合理的投资收益是多少？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion7"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width:99%;"><input type="radio" name="q7" id="q7_1" value="A"><label for="q7_1">A、12%及以下</label></li><li style="width:99%;"><input type="radio" name="q7" id="q7_2" value="B"><label for="q7_2">B、12%-15%</label></li><li style="width:99%;"><input type="radio" name="q7" id="q7_3" value="C"><label for="q7_3">C、15%-18%</label></li><li style="width:99%;"><input type="radio" name="q7" id="q7_4" value="D"><label for="q7_4">D、20%及以上</label></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div8"><div class="div_title_question_all"><div class="div_topic_question"><b>8.</b></div><div id="divTitle8" class="div_title_question">您的意向投资金额是多少？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion8"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width:99%;"><input type="radio" name="q8" id="q8_1" value="A"><label for="q8_1">A、一万以下</label></li><li style="width:99%;"><input type="radio" name="q8" id="q8_2" value="B"><label for="q8_2">B、一万到五万</label></li><li style="width:99%;"><input type="radio" name="q8" id="q8_3" value="C"><label for="q8_3">C、五万到十万</label></li><li style="width:99%;"><input type="radio" name="q8" id="q8_4" value="D"><label for="q8_4">D、十万以上</label></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div9"><div class="div_title_question_all"><div class="div_topic_question"><b>9.</b></div><div id="divTitle9" class="div_title_question">您会不会向您的亲友推荐互联网金融投资？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion9"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width:99%;"><input type="radio" name="q9" id="q9_1" value="A"><label for="q9_1">A、推荐</label></li><li style=""><input type="radio" name="q9" id="q9_2" value="B"><label for="q9_2" style="display: inline-block;">B、不推荐，理由：</label><input class="underline" type="text" value="" rel="q9_2" name="q9_2" onpropertychange="lengthChange(this);" oninput="lengthChange(this);" style="color: rgb(153, 153, 153); position: static;"></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div id="divCut1"><div class="div_title_cut_question">为了更好的了解您对互联网金融的认知，请您体验<a href="https://www.ejiandai.com/#!/register" target="_blank">易简贷www.ejiandai.com注册</a>流程并回答以下调查问卷</div></div><div class="div_question" id="div10"><div class="div_title_question_all"><div class="div_topic_question"><b>10.</b></div><div id="divTitle10" class="div_title_question">您在注册了解易简贷过程中认为平台注册是否流畅？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion10"><div class="div_table_clear_top"></div><textarea title="" style="overflow: auto;width:62%;height:22px;" class="underline" value="" id="q10" name="q10"></textarea><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div11"><div class="div_title_question_all"><div class="div_topic_question"><b>11.</b></div><div id="divTitle11" class="div_title_question">微信扫描二维码<img src="__PUBLIC__/20150720_161057_-iFhAJkJeUapXqZBER5TAg" alt="">，可直接进行充值投资操作，您是否愿意使用手机进行操作？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion11"><div class="div_table_clear_top"></div><ul class="ulradiocheck"><li style="width:99%;"><input type="radio" name="q11" id="q11_1" value="A"><label for="q11_1">A、愿意</label></li><li style=""><input type="radio" name="q11" id="q11_2" value="B"><label for="q11_2" style="display: inline-block;">B、不愿意，理由：</label><input class="underline" type="text" value="" rel="q11_2" name="q11_2" onpropertychange="lengthChange(this);" oninput="lengthChange(this);" style="color: rgb(153, 153, 153); position: static;"></li><div style="clear:both;"></div></ul><div style="clear:both;"></div><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div class="div_question" id="div12"><div class="div_title_question_all"><div class="div_topic_question"><b>12.</b></div><div id="divTitle12" class="div_title_question">您对易简贷平台有什么意见或建议？<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion12"><div class="div_table_clear_top"></div><textarea title="" style="overflow: auto;width:62%;height:66px;" class="inputtext" value="" id="q12" name="q12"></textarea><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div><div id="divCut2"><div class="div_title_cut_question">平台简介：<br>易简贷<br><b>年化收益12%-15%</b><b>100元起投资</b><b>投资期限1-6个月</b><br>易简贷（<a href="http://www.ejiandai.com/" target="_blank">www.ejiandai.com</a>）是为有贷款融资需求的中小微企业主和有投资需求的客户提供信息服务的互联网金融平台。现有企易贷和车易贷并逐步开发房易贷、商易贷、农易贷等金融产品。易简贷投资人遍及全国31个省市、自治区，真正实现惠普金融，帮助借入者发展企业，帮助借出者增长财富，现已成为河北省最具发展潜力的互联网金融平台。</div></div><div class="div_question" id="div13"><div class="div_title_question_all"><div class="div_topic_question"><b>&nbsp;</b></div><div id="divTitle13" class="div_title_question">请输入您的手机号码：<span style="color:red;">&nbsp;*请输入正确的手机号码后提交</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion13"><div class="div_table_clear_top"></div><textarea title="" style="overflow: auto;width:200px;height:22px;" class="inputtext" value="" id="q13" name="q13"></textarea><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div><!----><div class="div_title_question_all"><div class="div_topic_question"><b>&nbsp;</b></div><div id="divTitle15" class="div_title_question">请输入推荐人姓名（没有推荐人填写无）：<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion15"><div class="div_table_clear_top"></div><textarea title="" style="overflow: auto;width:200px;height:22px;" class="inputtext" value="" id="q15" name="q15"></textarea><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div><!----><div class="div_title_question_all"><div class="div_topic_question"><b>&nbsp;</b></div><div id="divTitle14" class="div_title_question">请输入您的姓名：<span style="color:red;">&nbsp;*</span></div><div style="clear:both;"></div></div><div class="div_table_radio_question" id="divquestion14"><div class="div_table_clear_top"></div><textarea title="" style="overflow: auto;width:200px;height:22px;" class="inputtext" value="" id="q14" name="q14"></textarea><div class="div_table_clear_bottom"></div></div><div class="errorMessage"></div></div></div></fieldset><input type="button" class="submitbutton" value="提交" onmouseout="this.className=&#39;submitbutton&#39;;" id="submit_button" style="padding:0 35px;height:40px; margin-bottom:30px; margin-left:45%;" disabled="disabled"></form></div></div></div></div></div><script type="text/javascript">$(function(){
+         $("#submit_button").click(function(){
+            var q1=$('input:radio[name="q1"]:checked').val();
+            if(q1==null){
+                alert("第1题没有填写!");
+                return false;
+            }
+            var q2=$('input:radio[name="q2"]:checked').val();
+            if(q2==null){
+                alert("第2题没有填写!");
+                return false;
+            }
+			var q3=$('input:radio[name="q3"]:checked').val();
+            if(q3==null){
+                alert("第3题没有填写!");
+                return false;
+            }
+			var q4=$('input:radio[name="q4"]:checked').val();
+            if(q4==null){
+                alert("第4题没有填写!");
+                return false;
+            }
+			var q5=$('input[name="q5"]:checked').val();
+            if(q5==null){
+                alert("第5题没有填写!");
+                return false;
+            }
+			var q6=$('input:radio[name="q6"]:checked').val();
+            if(q6==null){
+                alert("第6题没有填写!");
+                return false;
+            }
+			var q7=$('input:radio[name="q7"]:checked').val();
+            if(q7==null){
+                alert("第7题没有填写!");
+                return false;
+            }
+			var q8=$('input:radio[name="q8"]:checked').val();
+            if(q8==null){
+                alert("第8题没有填写!");
+                return false;
+            }
+			var q9=$('input:radio[name="q9"]:checked').val();
+            if(q9==null){
+                alert("第9题没有填写!");
+                return false;
+            }
+			var q10=$('#q10').val();
+            if(q10==''){
+                alert("第10题没有填写!");
+                return false;
+            }
+			var q11=$('input:radio[name="q11"]:checked').val();
+            if(q11==null){
+                alert("第11题没有填写!");
+                return false;
+            }
+			var q12=$('#q12').val();
+            if(q12==''){
+                alert("第12题没有填写!");
+                return false;
+            }
+			var q14=$('#q14').val();
+            if(q14==''){
+                alert("您尚未填写姓名!");
+                return false;
+            }
+            else{
+                $('#qs').submit();
+            }           
+         });
+		 
+		 function checkPhone(){
+                	var phone = $('#q13').val();
+               	 	var re = /^[1][1-9][\d]{9}$/;
+                	if( phone == ''){
+                	   alert('手机号码不能为空!');
+                 	   return false;
+                	}
+                	if (!re.test(phone)){
+               	       //alert('手机号码格式错误!')
+              	       return false;
+               	 	}
+               	 	return true;
+           	 	}
+		 $("#q13").keyup(function(){
+					if (!checkPhone()){
+                        return false;
+						}
+					$.ajax({
+                        url: 'http://bbs.ejiandai.com/qs/index.php/Index/preg',
+                        dataType: 'json',
+                        data: {'phone': $('#q13').val()},
+                        success: function(data){
+                            var r = data.flag;
+							if(r==2){
+							    alert('您已经提交过,无需重复提交！');
+								$("#submit_button").attr("disabled","disabled");
+							}else if(r==1){
+								alert('手机号码验证成功！');
+							    $("#submit_button").removeAttr("disabled");
+							}
+                        },
+                        error: function(data){
+                            alert('程序错误！');
+							return false;
+                        }
+                    });
+				});
+});
+</script></body></html>

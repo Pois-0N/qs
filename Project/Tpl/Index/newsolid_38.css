@@ -1,0 +1,41 @@
+﻿body {
+/*background: #ddf4ff url("http://image.sojump.com/images/newbg/oldbg2-bg.jpg") repeat-x;*/
+}
+#jqContent {
+width:920px;
+/*background:url("top.png") no-repeat top center;
+padding-top:133px;*/
+margin:-14px auto;
+border: 2px solid #ccc;
+}
+#headerCss {
+background: white no-repeat;
+width: 920px;
+margin: 0 auto;
+}
+#mainCss {
+background: white;
+width: 920px;
+margin: 0 auto;
+  padding-top: 30px;
+}
+#footercss {
+width: 920px;
+margin: 0 auto;
+background: white;
+height: 20px;
+}
+.surveyhead h1{
+color:#19a8ee;
+}
+
+input.submitbutton {
+border:1px solid #0492d6;
+background:#13a5ec;
+}
+input.submitbutton_hover
+{
+    background:#1eb0f6; color:#fff !important;
+}
+legend{display:none;}
+fieldset{border:0;}
